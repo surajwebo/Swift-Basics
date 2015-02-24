@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HelloSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSg-FM-Wco">
+                                <rect key="frame" x="149" y="120" width="302" height="45"/>
+                                <color key="backgroundColor" red="0.60784316059999999" green="0.80392158030000005" blue="0.60784316059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="U59-ic-WiC"/>
+                                    <constraint firstAttribute="width" constant="302" id="hPz-4S-sFM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQj-By-dYy">
+                                <rect key="frame" x="149" y="255" width="302" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hit Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitMeButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hIh-vk-AOl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gSg-FM-Wco" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="41L-8u-xUh"/>
+                            <constraint firstItem="mQj-By-dYy" firstAttribute="trailing" secondItem="gSg-FM-Wco" secondAttribute="trailing" id="MhC-gd-prF"/>
+                            <constraint firstItem="mQj-By-dYy" firstAttribute="top" secondItem="gSg-FM-Wco" secondAttribute="bottom" constant="90" id="b09-ao-eTi"/>
+                            <constraint firstItem="mQj-By-dYy" firstAttribute="leading" secondItem="gSg-FM-Wco" secondAttribute="leading" id="hVn-Ar-z3G"/>
+                            <constraint firstItem="gSg-FM-Wco" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nSf-2t-ScA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHitMe" destination="mQj-By-dYy" id="6e8-3s-Gfi"/>
+                        <outlet property="lblHelloText" destination="gSg-FM-Wco" id="Xdg-8o-Kvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
